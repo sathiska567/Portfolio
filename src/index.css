@@ -160,3 +160,23 @@
   padding: 0;
   text-align: center;
 }
+
+/* Swiper Custom Styles */
+.projects-swiper .swiper-pagination-bullet {
+  background-color: hsl(var(--primary));
+  opacity: 0.5;
+}
+
+.projects-swiper .swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+.projects-swiper .swiper-button-prev,
+.projects-swiper .swiper-button-next {
+  color: hsl(var(--primary));
+}
+
+.projects-swiper .swiper-button-prev:hover,
+.projects-swiper .swiper-button-next:hover {
+  opacity: 0.8;
+}

@@ -1,4 +1,5 @@
 import { ArrowDown } from "lucide-react";
+// import avatarImage from "../assets/my.jpeg";
 
 export const HeroSection = () => {
   return (
@@ -7,6 +8,17 @@ export const HeroSection = () => {
       className="relative min-h-screen flex flex-col items-center justify-center px-4"
     >
       <div className="container max-w-4xl mx-auto text-center z-10">
+        <div className="mb-8">
+          {/* <div className="w-50 h-65 mx-auto mb-6 relative">
+            <div className="absolute inset-0 bg-primary/10 rounded-full animate-pulse-subtle"></div>
+            <img 
+              src={avatarImage} 
+              alt="Sathiska Sasindu" 
+              className="w-full h-full object-cover rounded-full relative z-10 border-4 border-primary/30 shadow-lg transform transition-transform duration-300 hover:scale-105"
+            />
+          </div> */}
+        </div>
+
         <div className="space-y-6">
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
             <span className="opacity-0 animate-fade-in"> Hi, I'm</span>
@@ -21,9 +33,7 @@ export const HeroSection = () => {
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-            I create stellar web experiences with modern technologies.
-            Specializing in front-end development, I build interfaces that are
-            both beautiful and functional.
+            -------- update soon --------
           </p>
 
           <div className="pt-4 opacity-0 animate-fade-in-delay-4">

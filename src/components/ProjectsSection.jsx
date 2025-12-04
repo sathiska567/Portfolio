@@ -10,30 +10,30 @@ import 'swiper/css/pagination';
 const projects = [
   {
     id: 1,
-    title: "SaaS Landing Page",
-    description: "A beautiful landing page app using React and Tailwind.",
+    title: "vehicle Mart",
+    description: "Vehicle Mart is a marketplace offering a wide range of vehicles with convenient buying and selling options.",
     image: "/projects/project1.png",
-    tags: ["React", "TailwindCSS", "Supabase"],
+    tags: ["React", "Nodejs", "MongoDB", "Contabo", "Jenkins", "Docker", "Graffana"],
     demoUrl: "#",
     githubUrl: "#",
   },
   {
     id: 2,
-    title: "Orbit Analytics Dashboard",
+    title: "Sport Management System",
     description:
-      "Interactive analytics dashboard with data visualization and filtering capabilities.",
+      "The sports management system streamlines tasks like game scheduling, player management, and registrations.It provides a centralized online platform for admins, coaches, players, and organizers.Overall, it improves efficiency, organization, and real-time coordination in sports activities.",
     image: "/projects/project2.png",
-    tags: ["TypeScript", "D3.js", "Next.js"],
+    tags: ["React", "Node.Js", "Express.Js", "MongoDB", "AWS"],
     demoUrl: "#",
     githubUrl: "#",
   },
   {
     id: 3,
-    title: "E-commerce Platform",
+    title: "E-Learning Platform",
     description:
-      "Full-featured e-commerce platform with user authentication and payment processing.",
+      "Collaborated with a colleague to create a student record system for G.U. Language Academy, enhancing Cambridge English exam preparation.",
     image: "/projects/project3.png",
-    tags: ["React", "Node.js", "Stripe"],
+    tags: ["React", "Node.js", "Express.js", "MongoDB", "AWS EC2"],
     demoUrl: "#",
     githubUrl: "#",
   },
@@ -41,32 +41,13 @@ const projects = [
     id: 4,
     title: "E-commerce Platform",
     description:
-      "Full-featured e-commerce platform with user authentication and payment processing.",
+      "This web-based application is designed to facilitate book cover design as the author's go-to hub for maximum impact and publicity, offering a dynamic showcase for engaging with the audience through event posters, detailed information, and moreFull-featured e-commerce platform with user authentication and payment processing.",
     image: "/projects/project3.png",
-    tags: ["React", "Node.js", "Stripe"],
+    tags: ["React", "Nodejs", "Expressjs", "MongoDB", "AWS EC2"],
     demoUrl: "#",
     githubUrl: "#",
   },
-  {
-    id: 5,
-    title: "E-commerce Platform",
-    description:
-      "Full-featured e-commerce platform with user authentication and payment processing.",
-    image: "/projects/project3.png",
-    tags: ["React", "Node.js", "Stripe"],
-    demoUrl: "#",
-    githubUrl: "#",
-  },
-  {
-    id: 6,
-    title: "E-commerce Platform",
-    description:
-      "Full-featured e-commerce platform with user authentication and payment processing.",
-    image: "/projects/project3.png",
-    tags: ["React", "Node.js", "Stripe"],
-    demoUrl: "#",
-    githubUrl: "#",
-  },
+
 ];
 
 export const ProjectsSection = () => {
@@ -85,7 +66,7 @@ export const ProjectsSection = () => {
 
         <Swiper
           modules={[Navigation, Pagination, A11y]}
-          spaceBetween={30}
+          spaceBetween={24}
           slidesPerView={1}
           navigation
           pagination={{ clickable: true }}
@@ -96,57 +77,73 @@ export const ProjectsSection = () => {
             },
             1024: {
               slidesPerView: 3,
-              spaceBetween: 30,
+              spaceBetween: 24,
             },
           }}
-          className="projects-swiper"
+          className="projects-swiper pb-12"
         >
           {projects.map((project, key) => (
-            <SwiperSlide key={key}>
-              <div className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover h-full">
-                <div className="h-48 overflow-hidden">
+            <SwiperSlide key={key} className="h-auto">
+              <div className="group gradient-border rounded-xl overflow-hidden card-hover h-full flex flex-col">
+                {/* Image Container - Fixed Height */}
+                <div className="relative h-52 overflow-hidden bg-gradient-to-br from-primary/5 to-primary/10">
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    className="w-full h-full object-cover transition-all duration-500 group-hover:scale-110 group-hover:brightness-110"
                   />
+                  <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </div>
 
-                <div className="p-6">
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    {project.tags.map((tag, tagIndex) => (
-                      <span 
-                        key={tagIndex} 
-                        className="px-2 py-1 text-xs font-medium border rounded-full bg-secondary text-secondary-foreground"
+                {/* Content Container - Flexible Height */}
+                <div className="p-6 flex flex-col flex-grow bg-card/50 backdrop-blur-sm">
+                  {/* Tags */}
+                  <div className="flex flex-wrap gap-2 mb-4 min-h-[32px]">
+                    {project.tags.slice(0, 4).map((tag, tagIndex) => (
+                      <span
+                        key={tagIndex}
+                        className="px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary border border-primary/20 hover:bg-primary/20 transition-colors duration-200"
                       >
                         {tag}
                       </span>
                     ))}
+                    {project.tags.length > 4 && (
+                      <span className="px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary border border-primary/20">
+                        +{project.tags.length - 4}
+                      </span>
+                    )}
                   </div>
 
-                  <h3 className="text-xl font-semibold mb-1"> {project.title}</h3>
-                  <p className="text-muted-foreground text-sm mb-4">
+                  {/* Title - Fixed Height */}
+                  <h3 className="text-xl font-bold mb-3 text-foreground group-hover:text-primary transition-colors duration-300 line-clamp-1">
+                    {project.title}
+                  </h3>
+
+                  {/* Description - Fixed Height with Line Clamp */}
+                  <p className="text-muted-foreground text-sm mb-6 flex-grow line-clamp-3 leading-relaxed">
                     {project.description}
                   </p>
-                  <div className="flex justify-between items-center">
-                    <div className="flex space-x-3">
-                      <a
-                        href={project.demoUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-foreground/80 hover:text-primary transition-colors duration-300"
-                      >
-                        <ExternalLink size={20} />
-                      </a>
-                      <a
-                        href={project.githubUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-foreground/80 hover:text-primary transition-colors duration-300"
-                      >
-                        <Github size={20} />
-                      </a>
-                    </div>
+
+                  {/* Action Buttons - Fixed at Bottom */}
+                  <div className="flex items-center gap-3 pt-4 border-t border-border/50">
+                    <a
+                      href={project.demoUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 px-4 py-2 rounded-lg bg-primary/10 text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300 text-sm font-medium flex-1 justify-center group/btn"
+                    >
+                      <ExternalLink size={16} className="group-hover/btn:rotate-12 transition-transform duration-300" />
+                      <span>Demo</span>
+                    </a>
+                    <a
+                      href={project.githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 px-4 py-2 rounded-lg border border-primary/30 text-foreground hover:bg-primary/10 hover:border-primary transition-all duration-300 text-sm font-medium flex-1 justify-center group/btn"
+                    >
+                      <Github size={16} className="group-hover/btn:scale-110 transition-transform duration-300" />
+                      <span>Code</span>
+                    </a>
                   </div>
                 </div>
               </div>

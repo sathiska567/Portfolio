@@ -10,32 +10,32 @@ import 'swiper/css/pagination';
 const projects = [
   {
     id: 1,
-    title: "vehicle Mart",
+    title: "Vehicle Mart",
     description: "Vehicle Mart is a marketplace offering a wide range of vehicles with convenient buying and selling options.",
-    image: "/projects/project1.png",
+    image: "/projects/vehicle_mart.png",
     tags: ["React", "Nodejs", "MongoDB", "Contabo", "Jenkins", "Docker", "Graffana"],
     demoUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/Vehicle-Mart-Project?view_as=public",
   },
   {
     id: 2,
     title: "Sport Management System",
     description:
       "The sports management system streamlines tasks like game scheduling, player management, and registrations.It provides a centralized online platform for admins, coaches, players, and organizers.Overall, it improves efficiency, organization, and real-time coordination in sports activities.",
-    image: "/projects/project2.png",
+    image: "/projects/sport_management.png",
     tags: ["React", "Node.Js", "Express.Js", "MongoDB", "AWS"],
     demoUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/sathiska567/Sport-Management-System-Project",
   },
   {
     id: 3,
     title: "E-Learning Platform",
     description:
       "Collaborated with a colleague to create a student record system for G.U. Language Academy, enhancing Cambridge English exam preparation.",
-    image: "/projects/project3.png",
+    image: "/projects/e-learning.png",
     tags: ["React", "Node.js", "Express.js", "MongoDB", "AWS EC2"],
     demoUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/sathiska567/English-Student-Management-System",
   },
   {
     id: 4,

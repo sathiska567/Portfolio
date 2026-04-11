@@ -73,7 +73,7 @@ export const ContactSection = () => {
                     href="tel:+947981980"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    +947981980
+                    +94717981980
                   </a>
                 </div>
               </div>
@@ -119,7 +119,7 @@ export const ContactSection = () => {
               <div>
                 <label
                   htmlFor="name"
-                  className="block text-sm font-medium mb-2"
+                  className="block text-sm font-medium mb-2 text-left"
                 >
                   {" "}
                   Your Name
@@ -130,14 +130,14 @@ export const ContactSection = () => {
                   name="name"
                   required
                   className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden foucs:ring-2 focus:ring-primary"
-                  placeholder="Pedro Machado..."
+                  placeholder="Enter your name..."
                 />
               </div>
 
               <div>
                 <label
                   htmlFor="email"
-                  className="block text-sm font-medium mb-2"
+                  className="block text-sm font-medium mb-2 text-left"
                 >
                   {" "}
                   Your Email
@@ -148,14 +148,14 @@ export const ContactSection = () => {
                   name="email"
                   required
                   className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden foucs:ring-2 focus:ring-primary"
-                  placeholder="john@gmail.com"
+                  placeholder="Enter your email..."
                 />
               </div>
 
               <div>
                 <label
                   htmlFor="message"
-                  className="block text-sm font-medium mb-2"
+                  className="block text-sm font-medium mb-2 text-left"
                 >
                   {" "}
                   Your Message

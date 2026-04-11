@@ -9,6 +9,7 @@ const skills = [
   { name: "TypeScript", level: 100, category: "frontend" },
   { name: "Tailwind CSS", level: 100, category: "frontend" },
   { name: "Next.js", level: 100, category: "frontend" },
+  { name: "Flutter", level: 100, category: "frontend" },
 
   // Backend
   { name: "Node.js", level: 100, category: "backend" },
@@ -20,6 +21,7 @@ const skills = [
   { name: "Spring Boot", level: 75, category: "backend" },
   { name: "NestJS", level: 75, category: "backend" },
   { name: "Supabase", level: 100, category: "backend" },
+  { name: "Firebase", level: 100, category: "backend" },
 
   // Tools
   { name: "Git/GitHub", level: 100, category: "tools" },
@@ -32,10 +34,10 @@ const skills = [
 
 ];
 
-const categories = ["all", "frontend", "backend", "tools"];
+const categories = ["frontend", "backend", "tools"];
 
 export const SkillsSection = () => {
-  const [activeCategory, setActiveCategory] = useState("all");
+  const [activeCategory, setActiveCategory] = useState("backend");
 
   const filteredSkills = skills.filter(
     (skill) => activeCategory === "all" || skill.category === activeCategory

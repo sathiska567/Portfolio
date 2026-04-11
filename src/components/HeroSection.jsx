@@ -61,6 +61,7 @@ export const HeroSection = () => {
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto opacity-0 animate-fade-in-delay-3">
             <span>{typed}</span>
             <span className="inline-block w-[2px] h-[1.1em] bg-primary align-middle ml-1 animate-pulse" />
+
           </p>
 
           <div className="pt-4 opacity-0 animate-fade-in-delay-4">

@@ -19,6 +19,15 @@ const projects = [
   },
   {
     id: 2,
+    title: "SkillOra",
+    description: "Skillora is a Sri Lankan freelance platform that connects people with skills to clients who need services.",
+    image: "/projects/Skillora-logo.png",
+    tags: ["Nextjs", "Nodejs","Fastify", "PostgresQL", "Contabo", "Github Actions", "Docker", "Graffana"],
+    demoUrl: "#",
+    githubUrl: "",
+  },
+  {
+    id: 2,
     title: "Sport Management System",
     description:
       "The sports management system streamlines tasks like game scheduling, player management, and registrations.It provides a centralized online platform for admins, coaches, players, and organizers.Overall, it improves efficiency, organization, and real-time coordination in sports activities.",
@@ -39,10 +48,10 @@ const projects = [
   },
   {
     id: 4,
-    title: "E-commerce Platform",
+    title: "Smart AI Metadata Generator for Images",
     description:
-      "This web-based application is designed to facilitate book cover design as the author's go-to hub for maximum impact and publicity, offering a dynamic showcase for engaging with the audience through event posters, detailed information, and moreFull-featured e-commerce platform with user authentication and payment processing.",
-    image: "/projects/project3.png",
+      "A Smart AI Metadata Generator for Images automatically creates titles, tags, and descriptions based on image content using artificial intelligence. It helps improve search visibility, organization, and SEO by generating accurate and relevant metadata quickly.",
+    image: "/projects/project-5.png",
     tags: ["React", "Nodejs", "Expressjs", "MongoDB", "AWS EC2"],
     demoUrl: "#",
     githubUrl: "#",

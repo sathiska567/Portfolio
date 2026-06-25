@@ -15,7 +15,16 @@ const projects = [
     image: "/projects/vehicle_mart.png",
     tags: ["React", "Nodejs", "MongoDB", "Contabo", "Jenkins", "Docker", "Graffana"],
     demoUrl: "#",
-    githubUrl: "https://github.com/Vehicle-Mart-Project?view_as=public",
+    githubUrl: "https://github.com/Vehicle-Mart-Project-V1",
+  },
+  {
+    id: 1,
+    title: "AI Extractor",
+    description: "AI Extractor is a tool that uses artificial intelligence to automatically extract relevant information from various data sources.",
+    image: "/projects/AI-Extractor.png",
+    tags: ["Nextjs", "Nodejs", "Contabo", "Jenkins", "Generative ai" , "Redis" , "PostgresQL"],
+    demoUrl: "https://ai-extractor-frontend.vercel.app/",
+    githubUrl: "https://github.com/AI-Extractor-Project",
   },
   {
     id: 2,
@@ -23,8 +32,8 @@ const projects = [
     description: "Skillora is a Sri Lankan freelance platform that connects people with skills to clients who need services.",
     image: "/projects/Skillora-logo.png",
     tags: ["Nextjs", "Nodejs","Fastify", "PostgresQL", "Contabo", "Github Actions", "Docker", "Graffana"],
-    demoUrl: "#",
-    githubUrl: "",
+    demoUrl: "https://github.com/sathiska567/SkillOra.git",
+    githubUrl: "https://github.com/sathiska567/SkillOra.git",
   },
   {
     id: 2,
@@ -33,7 +42,7 @@ const projects = [
       "The sports management system streamlines tasks like game scheduling, player management, and registrations.It provides a centralized online platform for admins, coaches, players, and organizers.Overall, it improves efficiency, organization, and real-time coordination in sports activities.",
     image: "/projects/sport_management.png",
     tags: ["React", "Node.Js", "Express.Js", "MongoDB", "AWS"],
-    demoUrl: "#",
+    demoUrl: "https://github.com/sathiska567/Sport-Management-System-Project",
     githubUrl: "https://github.com/sathiska567/Sport-Management-System-Project",
   },
   {
@@ -43,7 +52,7 @@ const projects = [
       "Collaborated with a colleague to create a student record system for G.U. Language Academy, enhancing Cambridge English exam preparation.",
     image: "/projects/e-learning.png",
     tags: ["React", "Node.js", "Express.js", "MongoDB", "AWS EC2"],
-    demoUrl: "#",
+    demoUrl: "https://github.com/sathiska567/English-Student-Management-System",
     githubUrl: "https://github.com/sathiska567/English-Student-Management-System",
   },
   {
@@ -53,8 +62,8 @@ const projects = [
       "A Smart AI Metadata Generator for Images automatically creates titles, tags, and descriptions based on image content using artificial intelligence. It helps improve search visibility, organization, and SEO by generating accurate and relevant metadata quickly.",
     image: "/projects/project-5.png",
     tags: ["React", "Nodejs", "Expressjs", "MongoDB", "AWS EC2"],
-    demoUrl: "#",
-    githubUrl: "#",
+    demoUrl: "https://github.com/PhotoKeywordGenerator",
+    githubUrl: "https://github.com/PhotoKeywordGenerator",
   },
 
 ];

@@ -41,52 +41,46 @@ export const ContactSection = () => {
           I'm always open to discussing new opportunities.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-1 gap-12 justify-center text-center">
           <div className="space-y-8">
             <h3 className="text-2xl font-semibold mb-6">
               {" "}
               Contact Information
             </h3>
 
-            <div className="space-y-6 justify-center">
-              <div className="flex items-start space-x-4">
-                <div className="p-3 rounded-full bg-primary/10">
-                  <Mail className="h-6 w-6 text-primary" />{" "}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto">
+              <div className="flex flex-col items-center space-y-3 p-6 rounded-lg bg-card/50 hover:bg-card transition-colors">
+                <div className="p-4 rounded-full bg-primary/10">
+                  <Mail className="h-8 w-8 text-primary" />
                 </div>
-                <div>
-                  <h4 className="font-medium w-[20%]"> Email</h4>
-                  <a
-                    href="mailto:sasindusathiska@gmail.com"
-                    className="text-muted-foreground hover:text-primary transition-colors"
-                  >
-                    sasindusathiska@gmail.com
-                  </a>
-                </div>
+                <h4 className="font-semibold text-lg">Email</h4>
+                <a
+                  href="mailto:sasindusathiska@gmail.com"
+                  className="text-muted-foreground hover:text-primary transition-colors break-all"
+                >
+                  sasindusathiska@gmail.com
+                </a>
               </div>
-              <div className="flex items-start space-x-4">
-                <div className="p-3 rounded-full bg-primary/10">
-                  <Phone className="h-6 w-6 text-primary" />{" "}
+              <div className="flex flex-col items-center space-y-3 p-6 rounded-lg bg-card/50 hover:bg-card transition-colors">
+                <div className="p-4 rounded-full bg-primary/10">
+                  <Phone className="h-8 w-8 text-primary" />
                 </div>
-                <div>
-                  <h4 className="font-medium w-[20%]"> Phone</h4>
-                  <a
-                    href="tel:+947981980"
-                    className="text-muted-foreground hover:text-primary transition-colors"
-                  >
-                    +94717981980
-                  </a>
-                </div>
+                <h4 className="font-semibold text-lg">Phone</h4>
+                <a
+                  href="tel:+94717981980"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  +94717981980
+                </a>
               </div>
-              <div className="flex items-start space-x-4">
-                <div className="p-3 rounded-full bg-primary/10">
-                  <MapPin className="h-6 w-6 text-primary" />{" "}
+              <div className="flex flex-col items-center space-y-3 p-6 rounded-lg bg-card/50 hover:bg-card transition-colors">
+                <div className="p-4 rounded-full bg-primary/10">
+                  <MapPin className="h-8 w-8 text-primary" />
                 </div>
-                <div>
-                  <h4 className="font-medium w-[20%]"> Location</h4>
-                  <a className="text-muted-foreground hover:text-primary transition-colors">
-                    Moratuwa, Sri Lanka
-                  </a>
-                </div>
+                <h4 className="font-semibold text-lg">Location</h4>
+                <p className="text-muted-foreground">
+                  Moratuwa, Sri Lanka
+                </p>
               </div>
             </div>
 
@@ -102,14 +96,11 @@ export const ContactSection = () => {
                 <a href="#" target="_blank">
                   <Instagram />
                 </a>
-                <a href="#" target="_blank">
-                  <Twitch />
-                </a>
               </div>
             </div>
           </div>
 
-          <div
+          {/* <div
             className="bg-card p-8 rounded-lg shadow-xs"
             onSubmit={handleSubmit}
           >
@@ -180,7 +171,7 @@ export const ContactSection = () => {
                 <Send size={16} />
               </button>
             </form>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

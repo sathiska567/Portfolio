@@ -14,7 +14,7 @@ const projects = [
     description: "Vehicle Mart is a marketplace offering a wide range of vehicles with convenient buying and selling options.",
     image: "/projects/vehicle_mart.png",
     tags: ["React", "Nodejs", "MongoDB", "Contabo", "Jenkins", "Docker", "Graffana"],
-    demoUrl: "#",
+    demoUrl: "https://res.cloudinary.com/dov8hd3v6/video/upload/v1782368828/VehicleMart_-_Google_Chrome_2026-06-25_11-47-29_ll9dtn.mp4",
     githubUrl: "https://github.com/Vehicle-Mart-Project-V1",
   },
   {
